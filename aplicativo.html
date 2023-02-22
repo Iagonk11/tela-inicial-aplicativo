@@ -5,44 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
         }
         body{
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background: #111111;
+            background: #ff9292;
 
         }
         .aglomero{
             display: inline-flex;
+           
 
         }
         .aglomero .estatico{
             color: #ffff;
             font-size: 35px;
             font-weight: 400;
+            animation: lightSpeedInLeft 2s;
         }
         .aglomero .dinamico{
             margin-left: 15px;
             line-height: 40px;
             height: 40px;
             overflow: hidden;
+            animation: lightSpeedInLeft 2s;
         }
         .dinamico li{
-            color: #935ff3;
+            color: #6820ec;
             list-style: none;
             font-size: 35px;
             font-weight: 500;
             left: 0;
             position: relative;
-            animation: slide 6s steps(1) ;
+            
+        
         }
         @keyframes slide{
             100%{
@@ -55,9 +62,9 @@
             width: 100%;
             height: 100%;
             left: 0;
-            border-left: 2px solid #935ff3;
+            border-left: 2px solid #6820ec;;
             animation: typing 1.5s steps(10) infinite;
-            background: #111111;
+            background: #ff9292;
         }
         .dinamico li span{
             position: relative;
