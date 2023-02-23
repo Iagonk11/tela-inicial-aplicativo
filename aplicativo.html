@@ -13,6 +13,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
             
         }
         body{
@@ -24,7 +25,7 @@
 
         }
         .aglomero{
-            display: inline-flex;
+            display: flex;
            
 
         }
@@ -33,6 +34,7 @@
             font-size: 35px;
             font-weight: 400;
             animation: lightSpeedInLeft 2s;
+            
         }
         .aglomero .dinamico{
             margin-left: 15px;
@@ -40,6 +42,7 @@
             height: 40px;
             overflow: hidden;
             animation: lightSpeedInLeft 2s;
+            
         }
         .dinamico li{
             color: #6820ec;
@@ -48,6 +51,8 @@
             font-weight: 500;
             left: 0;
             position: relative;
+            
+            
             
         
         }
@@ -63,8 +68,9 @@
             height: 100%;
             left: 0;
             border-left: 2px solid #6820ec;;
-            animation: typing 1.5s steps(10) infinite;
+            animation: typing 1.5s steps(10) ;
             background: #ff9292;
+            animation-fill-mode: forwards;
         }
         .dinamico li span{
             position: relative;
@@ -76,6 +82,52 @@
             }
       
         }
+        /* animação laoding*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+
+        }
+        .loading{
+            width: 70px;
+            height: 70px;
+            border: 8px dotted #250463;
+            border-top-color: #8961d4;
+            border-right-color: #583696;
+            border-radius: 50%;
+            animation: loading 1s infinite linear;
+            
+        }
+        @keyframes loading {
+            to{
+                transform: rotate(1turn);
+            }
+
+            
+        }
+        /* animação brigadeiro */
+        .foto_brigadeiro{
+            width: 80px;
+            height: 100px;
+            position: relative;
+            left: 230px;
+            top: -350px;
+            animation: lightSpeedInLeft 2s;
+        }
+            
+            
+
+        
+        
+        
+
+
     </style>
 </head>
 <body>
@@ -85,6 +137,11 @@
             <li><span>Brigadeiro</span></li>
         </ul>
     </div>
+            <div class="container">
+                <div class="loading"></div>
+            </div>
+               <img class=" foto_brigadeiro" src="brigadeiro.png">
+               <div class="dois tres"></div>
    
 </body>
 </html>
